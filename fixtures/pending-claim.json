@@ -1,0 +1,40 @@
+{
+  "id": "venue-greyhaven-signal-archive-03",
+  "name": "Greyhaven Signal Archive",
+  "slug": "greyhaven-signal-archive",
+  "category": "Historical Archive",
+  "description": "Synthetic reference venue demonstrating an operator profile claim undergoing verification review.",
+  "coverageSource": "operator_submitted",
+  "assuranceStatus": "pending_review",
+  "publicationStatus": "draft",
+  "profileClaimStatus": "claim_pending",
+  "coordinates": {
+    "coordinateSystem": "synthetic_local_grid",
+    "xMetres": 1850,
+    "yMetres": 1120,
+    "elevationMetres": 28
+  },
+  "fixtureMetadata": {
+    "synthetic": true,
+    "productionSafe": false,
+    "intendedUse": "documentation_and_testing"
+  },
+  "disputeDetails": {
+    "rightsDispute": {
+      "isDisputed": false,
+      "category": "none",
+      "resolutionStatus": "under_review",
+      "reviewedBy": "role_governance_auditor",
+      "reviewedAt": "2026-07-24T14:30:00Z",
+      "note": "Operator authorization and lease proof under audit."
+    },
+    "factualDispute": {
+      "isDisputed": false,
+      "category": "none",
+      "confidenceScore": 0.85,
+      "resolutionStatus": "none",
+      "evidenceReferences": [],
+      "note": "Operating hours and collection inventory submitted by applicant."
+    }
+  }
+}

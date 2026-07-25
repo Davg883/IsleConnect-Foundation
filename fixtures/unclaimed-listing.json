@@ -1,0 +1,40 @@
+{
+  "id": "venue-lantern-quay-cafe-02",
+  "name": "Lantern Quay Café",
+  "slug": "lantern-quay-cafe",
+  "category": "Food & Beverage",
+  "description": "Synthetic reference venue representing public-source coverage generated from open spatial directory data.",
+  "coverageSource": "public_source",
+  "assuranceStatus": "unverified",
+  "publicationStatus": "published",
+  "profileClaimStatus": "unclaimed",
+  "coordinates": {
+    "coordinateSystem": "synthetic_local_grid",
+    "xMetres": 1420,
+    "yMetres": 910,
+    "elevationMetres": 4
+  },
+  "fixtureMetadata": {
+    "synthetic": true,
+    "productionSafe": false,
+    "intendedUse": "documentation_and_testing"
+  },
+  "disputeDetails": {
+    "rightsDispute": {
+      "isDisputed": false,
+      "category": "none",
+      "resolutionStatus": "none",
+      "reviewedBy": null,
+      "reviewedAt": null,
+      "note": "Public directory entry; profile claim not yet initiated."
+    },
+    "factualDispute": {
+      "isDisputed": false,
+      "category": "none",
+      "confidenceScore": 0.75,
+      "resolutionStatus": "none",
+      "evidenceReferences": [],
+      "note": "Basic grid positioning verified from open spatial sources."
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "venue-northmere-maritime-01",
+  "name": "Northmere Maritime Centre",
+  "slug": "northmere-maritime-centre",
+  "category": "Heritage & Culture",
+  "description": "Synthetic reference venue representing an operator-verified maritime museum and archive.",
+  "coverageSource": "operator_submitted",
+  "assuranceStatus": "verified",
+  "publicationStatus": "published",
+  "profileClaimStatus": "claimed",
+  "coordinates": {
+    "coordinateSystem": "synthetic_local_grid",
+    "xMetres": 1250,
+    "yMetres": 840,
+    "elevationMetres": 12
+  },
+  "fixtureMetadata": {
+    "synthetic": true,
+    "productionSafe": false,
+    "intendedUse": "documentation_and_testing"
+  },
+  "disputeDetails": {
+    "rightsDispute": {
+      "isDisputed": false,
+      "category": "none",
+      "resolutionStatus": "none",
+      "reviewedBy": "role_governance_auditor",
+      "reviewedAt": "2026-07-20T10:00:00Z",
+      "note": "Ownership documentation and operating rights verified."
+    },
+    "factualDispute": {
+      "isDisputed": false,
+      "category": "none",
+      "confidenceScore": 1.0,
+      "resolutionStatus": "none",
+      "evidenceReferences": [],
+      "note": "Historical timeline backed by public archive records."
+    }
+  }
+}

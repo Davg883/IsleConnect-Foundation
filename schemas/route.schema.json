@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://foundation.isleconnect.org/schemas/route.schema.json",
+  "title": "IsleConnect Discovery Route Schema",
+  "description": "Schema for place-based discovery trails connecting multiple synthetic venue milestones.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "slug",
+    "type",
+    "coverageSource",
+    "publicationStatus",
+    "milestones",
+    "fixtureMetadata"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "slug": { "type": "string" },
+    "type": { "type": "string", "enum": ["route"] },
+    "coverageSource": { "type": "string" },
+    "publicationStatus": { "type": "string" },
+    "milestones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["step", "venueId", "title", "coordinates"],
+        "properties": {
+          "step": { "type": "integer" },
+          "venueId": { "type": "string" },
+          "title": { "type": "string" },
+          "coordinates": {
+            "type": "object",
+            "required": ["coordinateSystem", "xMetres", "yMetres"],
+            "properties": {
+              "coordinateSystem": { "type": "string", "enum": ["synthetic_local_grid"] },
+              "xMetres": { "type": "number" },
+              "yMetres": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    "fixtureMetadata": {
+      "type": "object",
+      "required": ["synthetic", "productionSafe", "intendedUse"]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://foundation.isleconnect.org/schemas/dispute.schema.json",
+  "title": "IsleConnect Dispute Taxonomy Schema",
+  "description": "Taxonomy schema separating Rights Disputes from Factual Disputes with explicit resolution tracking.",
+  "type": "object",
+  "properties": {
+    "rightsDispute": {
+      "type": "object",
+      "required": ["isDisputed", "category", "resolutionStatus"],
+      "properties": {
+        "isDisputed": { "type": "boolean" },
+        "category": {
+          "type": "string",
+          "enum": ["ownership_authority", "image_reproduction_rights", "commercial_use", "none"]
+        },
+        "resolutionStatus": {
+          "type": "string",
+          "enum": ["open", "under_review", "resolved", "rejected", "none"]
+        },
+        "reviewedBy": { "type": ["string", "null"] },
+        "reviewedAt": { "type": ["string", "null"] },
+        "note": { "type": "string" }
+      }
+    },
+    "factualDispute": {
+      "type": "object",
+      "required": ["isDisputed", "category", "resolutionStatus"],
+      "properties": {
+        "isDisputed": { "type": "boolean" },
+        "category": {
+          "type": "string",
+          "enum": ["historical_confidence", "attribution_date", "geographic_location", "none"]
+        },
+        "confidenceScore": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "resolutionStatus": {
+          "type": "string",
+          "enum": ["open", "under_review", "resolved", "rejected", "none"]
+        },
+        "evidenceReferences": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

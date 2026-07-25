@@ -1,0 +1,42 @@
+{
+  "id": "venue-old-harbor-lightstation-04",
+  "name": "Old Harbor Lightstation",
+  "slug": "old-harbor-lightstation",
+  "category": "Historic Landmark",
+  "description": "Synthetic reference venue demonstrating structural dispute tracking for both reproduction rights and factual evidence.",
+  "coverageSource": "curated_editorial",
+  "assuranceStatus": "disputed",
+  "publicationStatus": "draft",
+  "profileClaimStatus": "unclaimed",
+  "coordinates": {
+    "coordinateSystem": "synthetic_local_grid",
+    "xMetres": 2100,
+    "yMetres": 1450,
+    "elevationMetres": 45
+  },
+  "fixtureMetadata": {
+    "synthetic": true,
+    "productionSafe": false,
+    "intendedUse": "documentation_and_testing"
+  },
+  "disputeDetails": {
+    "rightsDispute": {
+      "isDisputed": true,
+      "category": "image_reproduction_rights",
+      "resolutionStatus": "open",
+      "reviewedBy": "role_editor_lead",
+      "reviewedAt": "2026-07-25T12:00:00Z",
+      "note": "Licensing authorization for historic architectural drawings undergoing legal verification."
+    },
+    "factualDispute": {
+      "isDisputed": true,
+      "category": "historical_confidence",
+      "confidenceScore": 0.5,
+      "resolutionStatus": "under_review",
+      "evidenceReferences": [
+        "https://example.org/synthetic-archives/doc-10492"
+      ],
+      "note": "Conflicting local archive records regarding original 1840s beacon tower commissioning dates."
+    }
+  }
+}

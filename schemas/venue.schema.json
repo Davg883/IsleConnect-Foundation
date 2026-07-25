@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://foundation.isleconnect.org/schemas/venue.schema.json",
+  "title": "IsleConnect Venue Reference Schema",
+  "description": "Schema for permissioned, place-based venue entities with orthogonal lifecycle states and synthetic local grid coordinates.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "slug",
+    "coverageSource",
+    "assuranceStatus",
+    "publicationStatus",
+    "profileClaimStatus",
+    "coordinates",
+    "fixtureMetadata"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9_-]+$" },
+    "name": { "type": "string", "minLength": 1 },
+    "slug": { "type": "string" },
+    "category": { "type": "string" },
+    "description": { "type": "string" },
+    "coverageSource": {
+      "type": "string",
+      "enum": ["operator_submitted", "public_source", "curated_editorial"]
+    },
+    "assuranceStatus": {
+      "type": "string",
+      "enum": ["unverified", "pending_review", "verified", "disputed"]
+    },
+    "publicationStatus": {
+      "type": "string",
+      "enum": ["draft", "published", "archived"]
+    },
+    "profileClaimStatus": {
+      "type": "string",
+      "enum": ["unclaimed", "claim_pending", "claimed", "claim_rejected"]
+    },
+    "coordinates": {
+      "type": "object",
+      "required": ["coordinateSystem", "xMetres", "yMetres"],
+      "properties": {
+        "coordinateSystem": { "type": "string", "enum": ["synthetic_local_grid"] },
+        "xMetres": { "type": "number", "minimum": 0 },
+        "yMetres": { "type": "number", "minimum": 0 },
+        "elevationMetres": { "type": "number" }
+      }
+    },
+    "fixtureMetadata": {
+      "type": "object",
+      "required": ["synthetic", "productionSafe", "intendedUse"],
+      "properties": {
+        "synthetic": { "type": "boolean" },
+        "productionSafe": { "type": "boolean" },
+        "intendedUse": { "type": "string" }
+      }
+    },
+    "disputeDetails": {
+      "$ref": "dispute.schema.json"
+    }
+  }
+}

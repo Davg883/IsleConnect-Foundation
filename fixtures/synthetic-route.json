@@ -1,0 +1,56 @@
+{
+  "id": "route-harbourglass-trail-05",
+  "name": "Harbourglass Visitor Trail",
+  "slug": "harbourglass-visitor-trail",
+  "type": "route",
+  "coverageSource": "curated_editorial",
+  "publicationStatus": "published",
+  "description": "Synthetic reference discovery trail connecting fictional maritime venues and scenic local grid milestones.",
+  "fixtureMetadata": {
+    "synthetic": true,
+    "productionSafe": false,
+    "intendedUse": "documentation_and_testing"
+  },
+  "milestones": [
+    {
+      "step": 1,
+      "venueId": "venue-northmere-maritime-01",
+      "title": "Northmere Maritime Centre",
+      "coordinates": {
+        "coordinateSystem": "synthetic_local_grid",
+        "xMetres": 1250,
+        "yMetres": 840
+      }
+    },
+    {
+      "step": 2,
+      "venueId": "venue-lantern-quay-cafe-02",
+      "title": "Lantern Quay Café",
+      "coordinates": {
+        "coordinateSystem": "synthetic_local_grid",
+        "xMetres": 1420,
+        "yMetres": 910
+      }
+    },
+    {
+      "step": 3,
+      "venueId": "venue-greyhaven-signal-archive-03",
+      "title": "Greyhaven Signal Archive",
+      "coordinates": {
+        "coordinateSystem": "synthetic_local_grid",
+        "xMetres": 1850,
+        "yMetres": 1120
+      }
+    },
+    {
+      "step": 4,
+      "venueId": "venue-old-harbor-lightstation-04",
+      "title": "Old Harbor Lightstation",
+      "coordinates": {
+        "coordinateSystem": "synthetic_local_grid",
+        "xMetres": 2100,
+        "yMetres": 1450
+      }
+    }
+  ]
+}
